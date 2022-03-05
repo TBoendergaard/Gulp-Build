@@ -9,8 +9,6 @@ export const webp = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-        // Only pass through changed files
-        //.pipe(changed(app.path.build.images))
         // Images compressor
         // Optimized conversion to WEBP
         .pipe(app.plugins.if(

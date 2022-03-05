@@ -17,6 +17,7 @@ const path = {
         js: `${srcFolder}/js/app.js`,
         html: `${srcFolder}/*.html`,
         files: `${srcFolder}/files/**/*.*`,
+        fonts: `${srcFolder}/fonts/**/*.ttf`,
         less: `${srcFolder}/less/style.less`,
         lessLibs: [
             'node_modules/swiper/swiper-bundle.css'

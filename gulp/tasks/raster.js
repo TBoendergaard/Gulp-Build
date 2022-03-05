@@ -1,4 +1,3 @@
-//import changed from "gulp-changed";
 import imagemin from "gulp-imagemin";
 import imgOptipng from "imagemin-optipng";
 import imgGifsicle from "imagemin-gifsicle";
@@ -15,8 +14,6 @@ export const raster = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-        // Only pass through changed files
-        //.pipe(changed(app.path.build.images))
         // Images compressor
         .pipe(app.plugins.if(
             app.isBuild,

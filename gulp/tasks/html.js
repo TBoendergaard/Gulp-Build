@@ -1,6 +1,6 @@
 import fileInclude from "gulp-file-include";
-import webpHtmlNosvg from "gulp-webp-html-nosvg";
-import versionNumber from "gulp-version-number";
+import webpHtmlNosvg from "gulp-webp-html-nosvg"; // Webp converter
+import versionNumber from "gulp-version-number"; // Add version number to js/css/image in HTML
 
 export const html = () => {
     return app.gulp.src(app.path.src.html)

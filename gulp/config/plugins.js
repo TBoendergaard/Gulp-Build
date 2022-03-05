@@ -5,7 +5,7 @@ import browsersync from "browser-sync"; // Browser auto-refresh
 import newer from 'gulp-newer'; // Update cheker
 import ifPlugin from 'gulp-if'; // Conditional branching 
 
-//Export plugins object
+// Export plugins object
 export const plugins = {
     replace: replace,
     plumber: plumber,

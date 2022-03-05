@@ -1,7 +1,7 @@
-import gulpLess from 'gulp-less'; //less preprocessor
-import gulpSourcemaps from 'gulp-sourcemaps'; //sourcemaps
-import cleanCss from 'gulp-clean-css'; //css minify
-import gulpConcat from 'gulp-concat'; // Concat files
+import gulpLess from 'gulp-less'; // Less preprocessor
+import gulpSourcemaps from 'gulp-sourcemaps'; // Sourcemaps
+import cleanCss from 'gulp-clean-css'; // Css minify
+import gulpConcat from 'gulp-concat'; // Concat filess
 
 export const lessLibs = () => {
     if (app.path.src.lessLibs.length > 0) {
