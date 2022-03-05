@@ -3,7 +3,7 @@ import gulpSourcemaps from 'gulp-sourcemaps'; // Sourcemaps
 import cleanCss from 'gulp-clean-css'; // Css minify
 import gulpConcat from 'gulp-concat'; // Concat filess
 
-export const lessLibs = () => {
+export const lessLibs = (done) => {
     if (app.path.src.lessLibs.length > 0) {
         return app.gulp.src(app.path.src.lessLibs)
             .pipe(app.plugins.plumber(
@@ -31,5 +31,7 @@ export const lessLibs = () => {
                 gulpSourcemaps.write('/')
             ))
             .pipe(app.gulp.dest(app.path.build.css))
+    } else {
+        return done();
     }
 }

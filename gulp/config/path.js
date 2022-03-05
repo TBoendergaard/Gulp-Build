@@ -19,9 +19,7 @@ const path = {
         files: `${srcFolder}/files/**/*.*`,
         fonts: `${srcFolder}/fonts/**/*.ttf`,
         less: `${srcFolder}/less/style.less`,
-        lessLibs: [
-            'node_modules/swiper/swiper-bundle.css'
-        ],
+        lessLibs: [],
         fontsCss: `${srcFolder}/less/fonts.less`,
         raster: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg,ico}`,
         toWebp: `${srcFolder}/img/**/*.{jpg,jpeg,png}`,
